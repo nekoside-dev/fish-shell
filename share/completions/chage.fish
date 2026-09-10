@@ -1,0 +1,12 @@
+complete -c chage -f -a "(__fish_complete_users)"
+
+complete -c chage -s d -l lastday    -x -d "Set the date when the password was last changed"
+complete -c chage -s E -l expiredate -x -d "Set the date on which the user's password expires"
+complete -c chage -s h -l help          -d "Display help message and exit"
+complete -c chage -s i -l iso8601       -d "Print dates with YYYY-MM-DD format"
+complete -c chage -s I -l inactive   -x -d ""
+complete -c chage -s l -l list          -d "Show account aging information"
+complete -c chage -s M -l maxdays    -x -d "Set the maximum number of days during which a password is valid"
+complete -c chage -s R -l root       -x -d ""                                                                 -a "(__fish_complete_directories)"
+complete -c chage -s P -l prefix     -x -d ""                                                                 -a "(__fish_complete_directories)"
+complete -c chage -s W -l warndays   -x -d ""
